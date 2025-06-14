@@ -1,6 +1,64 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --color-principal:#584738;
+  --color-secondary:#4c583e;
+  --color-terciary:#B59E7D;
+  --color-fourth:#959581;
+  --color-fifth:#f1eada;
 }
 
+
+body{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+#Containerformulario{
+  background-color: yellow;
+display: flex;
+}
+
+#FormContacto{ 
+    color:black 
+}
+
+
+#Bordercaja{
+  border: #4c583e solid 1px;
+  padding: 15px;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+
+}
+.form-label{
+  font-weight: 800;
+}
+
+.form-control{
+  width: 100%;
+  /* background-color:#584738; */
+  
+}
+
+#exampleFormControlInput1{
+ border:#4c583e solid 1px;
+ margin: 5px;
+}
+
+.exampleFormControlTextarea1{
+  background-color: aqua;
+}
+
+#ContainerMapa{
+  display: flex;
+}
+
+#enviarboton{
+  width: 50%;
+  justify-content: center;
+align-items: center;
+margin: 50px;
+}

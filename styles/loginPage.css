@@ -1,17 +1,20 @@
 *{
-  --fondo-card:url(../Assets/Img/Paisaje-fondo-card.png);
-  --color-text:black;
-  --color-a:blue;
-  --color-botonL:linear-gradient(to bottom,rgb(115, 214, 153), rgb(195, 230, 210));
-  --color-hoverBL:rgb(0, 119, 255);
-  --color-texthbl:white;
+  --color-principal:#584738;
+  --color-secondary:#4c583e;
+  --color-terciary:#B59E7D;
+  --color-fourth:#ebd5b6;
+  --color-fifth:#959581;
+  --color-sixth:#f1eada;
+  --color-input:rgb(82, 58, 11);
+  --color-input2:#745c3d;
+  --color-a:#745e16;
 }
 body{
   min-width: 100vw;
   min-height: 100vh;
-  
+  background-color: var(--color-sixth);
 }
-a{
+.CardIS a{
   color: var(--color-a);
 }
 main{
@@ -20,49 +23,130 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .CardIS{
+  background-color: var(--color-fourth);
   padding: 1em;
-  
-  background-image: var(--fondo-card);
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  display: flex;
-  flex-direction: column;
-  color: var(--color-text);
-  text-align: center;
-  align-items: center;
+  border-radius: 1em;
+  margin: 1em;
 }
-.CardIS h3{
-  font-size: 2em;
+#usuario, #contraseña{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input);
 }
-.FormInicioSesion, form{
-  width: 100%;
-  font-size: 1.1em; 
+.TextCard{
+  font-size: large;
+  font-weight: 500;
+  background-color: var(--color-fourth);
+  padding: 0.2em;
+  border-radius: 0.5em;
 }
-.ContainerBTNG{
+#recuerdame:hover{
+  cursor: pointer;
+}
+.BotonL{
+  background-color: var(--color-terciary);
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border:0.1em solid var(--color-principal);
+}
+.BotonL:hover{
+  background-color: var(--color-principal);
+  color: var(--color-fourth);
+}
+.BTNgoogle{
   width: 100%;
   position: relative;
 }
-.BtnGoogle img{
-  width: 2em;
-  height: 2em;
+.logoG{
+  width: 1.25em;
+  height: 1.25em;
   position: absolute;
-  right: 7em;
+  top: 0.1em;
+  right: 10.2em;
 }
-.TextCard{
-  background-color: rgba(80, 172, 103, 0.527);
-  padding: 0.1em;
-  border-radius: 0.5em;
-  font-weight: 600;
+/* SECCIÓN REGISTRO */
+.mainRegistro{
+  width: 100vw;
+  height: auto;
+  padding: 1em;
+  display:flex ;
+  flex-wrap: wrap;
+
 }
-.BotonL{
+.CardRegistro{
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: start;
+  justify-content: center;
+  
+}
+.ContainerRegistro h4{
+  width: 100%;
+  text-align: center;
+}
+.mainRegistro h2{
+  width: 100%;
+  height: 13vh;
+  margin: 0;
+  text-align: center;
+  color: var(--color-principal);
+
+}
+.ContainerRegistro{
+  width: auto;
+  padding: 1em;
+  margin-top: 0;
+  background-color: var(--color-terciary);
+  border-radius: 1em;
+  
+}
+#Nombre, #Apellido, #newuser, #E-mail, #domicilio, #selectciudad, #cp, #contraseña2{
   padding: 0.2em;
-  border-radius: 0.7em;
-  background-image: var(--color-botonL);
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  margin-bottom: 0.4em;
+  width: 80%;
 }
-.BotonL:hover{
-  background: var(--color-hoverBL);
-  color: var(--color-texthbl);
+.TelefonoF{
+  width: 100%;
+  display: flex;
+}
+#firsttelefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  margin-bottom: 0.4em;
+  width: 10%;
+}
+
+#telefono{
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: 0.15em solid var(--color-input2);
+  margin-bottom: 0.4em;
+  width: 70%;
+}
+.TextReg{
+  font-size:large ;
+  font-weight: 500;
+}
+.BotonR{
+  margin-top: 1em;
+  background-color: var(--color-fourth);
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border:0.1em solid var(--color-principal);
+}
+.BotonR:hover{
+  margin-top: 1em;
+  background-color: var(--color-principal);
+  color: var(--color-fourth);
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border:0.1em solid var(--color-principal);
 }

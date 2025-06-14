@@ -50,61 +50,68 @@
     </nav>
 </header>
   <main>
-    <h2>CREAR NUEVO USUARIO</h2>
-    <div>   
-
-    <h4>Ahora ingrese sus datos</h4> <br>
-    <form >
-      <label for="Nombre" name="Nombre" class="TextL">Nombre</label>
-      <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese su primer nombre" minlength="3" maxlength="12" size="25" required> <br>
-      <label for="Apellido" name="Apellido" class="TextL">Apellido</label>
-      <input type="text" name="Apellido" id="Apellido" placeholder="Ingrese su primer apellido" minlength="3" maxlength="12" size="25" required> <br>
-      <label for="newuser" name="newuser" class="TextL">Ingrese su nombre de usuario</label>
-      <input type="text" name="newuser" id="newuser" maxlength="16" placeholder="ej: Usuario123" size="20" required><br>
-      <label for="E-mail" name="E-mail" class="TextL">Ingrese su e-mail</label>
-      <input type="E-mail" id="E-mail" placeholder="ej: usuario123@gmail.com" size="50"  required> <br>
-      <label for="telefono">Telefono</label>
-      <input type="text" name="firsttelefono" id="firsttelefono" size="2" placeholder="+54">
-      <input type="text" name="telefono" id="telefono" maxlength="15" placeholder="Ingrese su N° de Teléfono" size="25" required> <br>
-      <label for="domicilio">Domicilio</label> 
-      <input type="text" name="domicilio" id="domicilio" placeholder="Ingrese su domicilio actual" size="35" required>
-      <label for="ciudad">Ciudad</label>
-      <select name="ciudad" id="selectciudad" required>
-        <option value="-">------</option>
-        <option value="Buenos-Aires">Buenos Aires</option>
-        <option value="Catamarca">Catamarca</option>
-        <option value="Chaco">Chaco</option>
-        <option value="Chubut">Chubut</option>
-        <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
-        <option value="Cordoba">Córdoba</option>
-        <option value="Corrientes">Corrientes</option>
-        <option value="Entre-Rios">Entre Ríos</option>
-        <option value="Formosa">Formosa</option>
-        <option value="Jujuy">Jujuy</option>
-        <option value="La-Pampa">La Pampa</option>
-        <option value="La-Rioja">La Rioja</option>
-        <option value="Mendoza">Mendoza</option>
-        <option value="Misiones">Misiones</option>
-        <option value="Neuquen">Neuquén</option>
-        <option value="Rio-Negro">Río Negro</option>
-        <option value="Salta">Salta</option>
-        <option value="San-Juan">San Juan</option>
-        <option value="San-Luis">San Luis</option>
-        <option value="Santa-Cruz">Santa Cruz</option>
-        <option value="Santa-Fe">Santa Fé</option>
-        <option value="Santiago-del-Estero">Santiago del Estero</option>
-        <option value="Tierra-del-Fuego">Tierra del Fuego</option>
-        <option value="Tucuman">Tucumán</option>
-      </select>
-      <br>
-      <label for="cp">Código Postal</label>
-      <input type="text" name="cp" id="cp" placeholder="----" size="4" maxlength="5"> <br>
-      <label for="contraseña2" class="TextL">Escriba una contraseña</label>
-      <input type="password" name="contraseña" id="contraseña2" maxlength="20" size="25" placeholder="Escriba aquí su contraseña" required> <br>
+    <div class="mainRegistro">
+      <h2>CREAR NUEVO USUARIO</h2>
+      <div class="CardRegistro">   
+        <div class="ContainerRegistro">
+          <h4>Ahora ingrese sus datos</h4> 
+          <form class="FormRegistro" >
+          <label for="Nombre" name="Nombre" class="TextReg">Nombre:</label><br>
+          <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese su primer nombre" minlength="3" maxlength="12" size="25" required> <br>
+          <label for="Apellido" name="Apellido" class="TextReg">Apellido:</label><br>
+          <input type="text" name="Apellido" id="Apellido" placeholder="Ingrese su primer apellido" minlength="3" maxlength="12" size="25" required> <br>
+          <label for="newuser" name="newuser" class="TextReg">Ingrese su nombre de usuario:</label><br>
+          <input type="text" name="newuser" id="newuser" maxlength="16" placeholder="ej: Usuario123" size="20" required><br>
+          <label for="E-mail" name="E-mail" class="TextReg">Ingrese su e-mail:</label><br>
+          <input type="E-mail" id="E-mail" placeholder="ej: usuario123@gmail.com" size="50"  required> <br>
+          <label for="telefono"  class="TextReg">Telefono:</label><br>
+          <div class="TelefonoF">
+            <input type="text" name="firsttelefono" id="firsttelefono" size="2" placeholder="+54">
+            <input type="text" name="telefono" id="telefono" maxlength="15" placeholder="Ingrese su N° de Teléfono" size="25" required></div> 
+          <label for="domicilio" class="TextReg">Domicilio:</label> <br>
+          <input type="text" name="domicilio" id="domicilio" placeholder="Ingrese su domicilio actual" size="35" required><br>
+          <label for="ciudad" class="TextReg">Ciudad:</label><br>
+          <select name="ciudad" id="selectciudad" required>
+            <option value="-">------</option>
+            <option value="Buenos-Aires">Buenos Aires</option>
+            <option value="Catamarca">Catamarca</option>
+            <option value="Chaco">Chaco</option>
+            <option value="Chubut">Chubut</option>
+            <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
+            <option value="Cordoba">Córdoba</option>
+            <option value="Corrientes">Corrientes</option>
+            <option value="Entre-Rios">Entre Ríos</option>
+            <option value="Formosa">Formosa</option>
+            <option value="Jujuy">Jujuy</option>
+            <option value="La-Pampa">La Pampa</option>
+            <option value="La-Rioja">La Rioja</option>
+            <option value="Mendoza">Mendoza</option>
+            <option value="Misiones">Misiones</option>
+            <option value="Neuquen">Neuquén</option>
+            <option value="Rio-Negro">Río Negro</option>
+            <option value="Salta">Salta</option>
+            <option value="San-Juan">San Juan</option>
+            <option value="San-Luis">San Luis</option>
+            <option value="Santa-Cruz">Santa Cruz</option>
+            <option value="Santa-Fe">Santa Fé</option>
+            <option value="Santiago-del-Estero">Santiago del Estero</option>
+            <option value="Tierra-del-Fuego">Tierra del Fuego</option>
+            <option value="Tucuman">Tucumán</option>
+          </select>
+          <br>
+          <label for="cp" class="TextReg">Código Postal:</label> <br>
+          <input type="text" name="cp" id="cp" placeholder="----" size="4" maxlength="5"> <br>
+          <label for="contraseña2" class="TextReg">Escriba una contraseña:</label> <br>
+          <input type="password" name="contraseña2" id="contraseña2" maxlength="20" size="25" placeholder="Escriba aquí su contraseña" required> <br>
+          <input type="checkbox" name="Recordar" id="Recordar"><label for="Recordar" class="TextReg">Guardar contraseña</label>
+          <div class="BtnRegistro">
+            <a href="./PaginaError.html"><input type="button" class="BotonR" name="Agregar-Usuario"  value="REGISTRARME"></a>
+          </div>
+          
+          </form>
+        </div>
       
-      <a href="./PaginaError.html"><input type="button" name="Agregar-Usuario" class="BotonB" value="REGISTRARME"></a>
-
-    </form>
+      </div>
     </div>
   </main>
   <footer></footer>
